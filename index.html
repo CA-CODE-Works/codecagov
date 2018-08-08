@@ -1,89 +1,387 @@
-﻿<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
-<!--[if (gt IE 9)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getbootstrap.com/examples/starter-template/ -->
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="The official website for Code California.">
+    <meta name="author" content="Code California">
 
-<head>
-    <!--
-        California State Template
-        Version 5.0
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="../image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="../image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="../image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-        Based on Twitter Bootstrap
-    -->
-    <meta charset="utf-8">
-    <title>DEV-Your Organization Name</title>
-    <meta name="Author" content="State of California" />
-    <meta name="Description" content="State of California" />
-    <meta name="Keywords" content="California, government" />
-    <!--#include virtual="/ssi/head-css-js.html" -->
+    <!-- Social media post -->
 
-   
-</head>
+    <meta property="og:image" content="img/thumbnail.png" />
 
-<!-- possible body classes are "primary" and "two-column" -->
-<body class="primary">
-    <header role="banner" id="header" class="global-header fixed">
-        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
-        
-        <!-- Location Bar -->
-        <!--#include virtual="/ssi/location-bar.html" -->
-    
-        <!-- Include Utility Header -->
-        <!--#include virtual="/ssi/utility-header.html" -->
-        
-        <!-- Settings Bar -->
-        <!--#include virtual="/ssi/settings-bar.html" -->
+    <meta property="og:description" content="The official website for Code California." />
 
-        <!-- Include Branding -->
-        <!--#include virtual="/ssi/branding.html" -->
+    <meta property="og:url"content="" />
 
-        <!-- Include Mobile Controls -->
-        <!--#include virtual="/ssi/mobile-controls.html" -->
-    
-        <div class="navigation-search">
-            <!-- Include Navigation -->
-            <!--#include virtual="/ssi/navigation.html" -->
+    <meta property="og:title" content="Code California" />
 
-            <div id="head-search" class="search-container featured-search fade">
-                <!-- Include Search -->
-                <!--#include virtual="/ssi/search.html" -->
+    <title>Code California - Coding California government</title>
+
+    <!-- Bootstrap core CSS -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></script>
+
+    <!-- Custom Code California CSS -->
+      <link href="css/style.css" rel="stylesheet"></script>
+
+    <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
+
+    <!-- Font Awesome -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-left" href="index.html"><img src="img/logo.svg" alt="Code California" title="Code California"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://join.slack.com/t/codecagov/shared_invite/enQtNDExOTM1ODMzMDI1LWVlYjE1MmNjMDNkMGI2ZmM3MTc4MDYxMTA5YTc1MTBhZDI3NTA1NmNhMGQ4N2QyOGRmZGQxMTkwNzZhNDQ3OWM">Community</a></li>
+            <li><a href="https://www.eventbrite.com/o/code-california-17642141535">Events</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="https://docs.google.com/document/d/1hXYzV_KW49epVuj9EuUGP1hNNARRMf_yVi1Uz5XX_oI/edit?usp=sharing">Handbook</a></li>
+            <li><a href="https://github.com/cagov/codeCAgov"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="http://eepurl.com/dDrRC1"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/codecagov"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://facebook.com/codecagov"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://medium.com/code-california"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="bs-docs-masthead">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="opacity">
+              <h1>Coding California government</h1>
+              <p class="lead">Code California unites, educates and inspires California state agencies and leaders to build a foundation for amazing digital government services through an open, decentralized approach to code and organizational collaboration.</p>
             </div>
+          </div>
         </div>
 
-        <div class="header-decoration"></div>
-    </header>
+      </div>
 
+    </main>
 
+    <div class="container icon">
 
-    <!-- Ask Bar -->
-    <!--#include virtual="/ssi/ask-bar.html" -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Projects</h2>
+          <p class="lead">Featured California state government free and open source projects.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://data.ca.gov/"><i class="fa fa-area-chart" aria-hidden="true"></i></a>
+          <h3>Open data</h3>
+          <p>A statewide open data portal created to improve collaboration, expand transparency and lead to innovation and increased effectiveness.</p>
+          <p><a href="https://data.ca.gov/">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://webstandards.ca.gov/"><i class="fa fa-trophy" aria-hidden="true"></i></a>
+          <h3>Web standards</h3>
+          <p>Design and build user-centered, accessible, and mobile-friendly government websites.</p>
+          <p><a href="https://webstandards.ca.gov/">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://code.ca.gov/"><i class="fa fa-code" aria-hidden="true"></i></a>
+          <h3>Code</h3>
+          <p>Bringing improved access to the State of California’s custom-developed software.</p>
+          <p><a href="https://code.ca.gov/">Learn more &raquo;</a></p>
+        </div>
 
+      </div>
 
-    <!-- Step 5: Header Images -->
-    <!-- Include for optional slideshow banner -->
-    <!--#include virtual="/ssi/header-single-banner.html" -->
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
 
-    <div id="main-content" class="main-content">
-        <main class="main-primary">
-            <!-- Begin Main Content -->
-            <!--#include virtual="/ssi/section-service-group.html" -->
-            <!--#include virtual="/ssi/section-open-data.html" -->
-            <!--#include virtual="/ssi/section-green-buildings.html" -->
-            <!--#include virtual="/ssi/section-green-stats.html" -->
-            <!--#include virtual="/ssi/section-mobile-gallery.html" -->
-           
-                    <!--#include virtual="/ssi/section-footer2.html" -->
-                    <!-- End Main Content -->
-        </main>
     </div>
 
- 
-    <!--#include virtual="/ssi/global-footer.html" -->
+    <div class="container">
 
-    <!--#include virtual="/ssi/scripts.html" -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Community</h2>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-3 text-center icon">
+          <a href="https://join.slack.com/t/codecagov/shared_invite/enQtNDExOTM1ODMzMDI1LWVlYjE1MmNjMDNkMGI2ZmM3MTc4MDYxMTA5YTc1MTBhZDI3NTA1NmNhMGQ4N2QyOGRmZGQxMTkwNzZhNDQ3OWM"><i class="fa fa-comments" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p class="lead">Connect and collaborate with California state leaders, industry partners and civic technologists building a new approach to government technology innovation.</p>
+          <p><a class="btn btn-primary" href="https://join.slack.com/t/codecagov/shared_invite/enQtNDExOTM1ODMzMDI1LWVlYjE1MmNjMDNkMGI2ZmM3MTc4MDYxMTA5YTc1MTBhZDI3NTA1NmNhMGQ4N2QyOGRmZGQxMTkwNzZhNDQ3OWM" role="button">Join the community &raquo;</a></p>
+        </div>
+      </div>
 
-</body>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Events</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 text-center icon">
+          <a href="http://codecagov.eventbrite.com/"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p class="lead">Attend Code for California hosted general, agency-specific and community-focused hackathons.</p>
+          <p><a class="btn btn-primary" href="http://codecagov.eventbrite.com/" role="button">View events &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Training</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 text-center icon">
+          <a href="#"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p class="lead">Get training on how you can champion and help streamline more efficient and effective government leadership, including executive, procurement, legal and developer tracks.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Get training &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Handbook</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 text-center icon">
+          <a href="https://docs.google.com/document/d/1hXYzV_KW49epVuj9EuUGP1hNNARRMf_yVi1Uz5XX_oI/edit?usp=sharing"><i class="fa fa-book" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-md-9">
+          <p class="lead">Everything you need to know to get started and collaborate with Code California.</p>
+          <p><a class="btn btn-primary" href="https://docs.google.com/document/d/1hXYzV_KW49epVuj9EuUGP1hNNARRMf_yVi1Uz5XX_oI/edit?usp=sharing" role="button">View the handbook &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container features">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Connect</h2>
+          <p class="lead">Connect with Code California.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center icon">
+            <a href="http://eepurl.com/dDrRC1"><i class="fa fa-envelope" aria-hidden="true"></i>
+            <h3>Subscribe</h3></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center icon">
+            <a href="https://twitter.com/codeCAgov"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <h3>Twitter</h3></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center icon">
+            <a href="https://facebook.com/codeCAgov/"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <h3>Facebook</h3></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center icon">
+            <a href="https://medium.com/code-california"><i class="fa fa-medium" aria-hidden="true"></i>
+            <h3>Medium</h3></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container partners">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>How we work</h2>
+          <p class="lead">We work in the open, because ideas and contributions are everywhere.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          &nbsp;
+        </div>
+        <div class="col-md-8 feature text-center">
+          <a href="https://github.com/cagov/codeCAgov/projects/1"><img src="img/watch-us-work.png" alt="Watch us work" title="Watch us work"></a>
+          <p><a class="btn btn-primary" href="https://github.com/cagov/codeCAgov/projects/1" role="button">Watch us work &raquo;</a></p>
+        </div>
+        <div class="col-md-2">
+          &nbsp;
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <hr>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container partners">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Partners</h2>
+          <p class="lead">Code California is an open collaboration between California state government agencies, industry partners and civic technologists. Participating agencies:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <a href="https://www.govops.ca.gov/"><img src="img/logos/govops.png" alt="California Government Operations Agency" title="Government Operations Agency"></a>
+        </div>
+        <div class="col-md-6 text-center">
+          <br>
+          <a href="https://cdt.ca.gov/"><img src="img/logos/cdt.png" alt="California Department of Technology" title="California Department of Technology"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p><a class="btn btn-primary" href="#" role="button">Partner with Code California &raquo;</a></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer text-center">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <a href="index.html"><img src="img/thumbnail.png" alt="Code California" title="Code California"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <a href="http://eepurl.com/dDrRC1"><i class="fa fa-envelope" aria-hidden="true"></i></a> 
+            <a href="https://medium.com/code-california"><i class="fa fa-medium" aria-hidden="true"></i></a> 
+            <a href="https://join.slack.com/t/codecagov/shared_invite/enQtNDExOTM1ODMzMDI1LWVlYjE1MmNjMDNkMGI2ZmM3MTc4MDYxMTA5YTc1MTBhZDI3NTA1NmNhMGQ4N2QyOGRmZGQxMTkwNzZhNDQ3OWM"><i class="fa fa-slack" aria-hidden="true"></i></a> 
+            <a href="https://twitter.com/CodeCAgov"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/codeCAgov"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://github.com/cagov/codeCAgov"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="http://codeCAgov.eventbrite.com"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+            <a href="https://medium.com/feed/code-california"><i class="fa fa-feed" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Code California 2018 / Hero unit photo: <a href="https://codeforamerica.org">Code for America</a></p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
 </html>
