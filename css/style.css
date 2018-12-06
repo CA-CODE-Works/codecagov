@@ -30,19 +30,6 @@ p {
   font-size: 125%;
 }
 
-/* Card */
-
-.card {
-  background: #0071bc;
-  border-radius: 5px;
-  color: #fff;
-  padding: 20px;
-}
-.card a {
-  color: #fff;
-  display: block;
-}
-
 /* Forms */
 
 label {
@@ -63,9 +50,27 @@ label {
 /* Icons */
 
 .icon .fa {
+  color: #0071bc;
   font-size: 75px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+/* Card */
+
+.card {
+  background: #0071bc;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.card a, .card a:visited, .card a:hover {
+  color: #fff;
+  display: block;
+}
+.card .fa {
+  color: #ffffff !important;
 }
 
 /* images */
@@ -100,6 +105,9 @@ label {
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
 	background: #205493;
+}
+.navbar-header a, .navbar-header a:visited, .navbar-header a:hover {
+  color: #ffffff;
 }
 
 /* Masthead */
@@ -236,4 +244,7 @@ a.btn-primary, .btn-primary, a.btn-primary:hover, .btn-primary:hover {
   margin-bottom: 30px;
   margin-top: 30px;
   padding: 15px;
+}
+a.btn-primary:hover, .btn-primary:hover {
+  text-decoration: none;
 }
